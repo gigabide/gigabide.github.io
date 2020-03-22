@@ -4,85 +4,203 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/0c60a75a75.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Corby Berry</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Condiment|Roboto|Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
-
 <body>
-<!--Navbar-->
-<div class="navbar">
-    <ul>
-            <li><a href="assignment1.html">A1</a></li>
-            <li><a href="assignment2.html">A2</a></li>
-            <li><a href="assignment3.html">A3</a></li>
-            <li><a href="assignment4.html">A4</a></li>
-            <li><a href="assignment5.html">A5</a></li>
-            <li><a href="assignment6.html">A6</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
-            <li><a href="resume.html">Resume</a></li>
-    </ul>
-</div>
+    <header>
+        <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar"></div>
+            <div class="bar half end"></div>
+        </div>
+        
+        <nav class="top-nav">
+            <ul class="nav-list">
+                <li>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li>
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li>
+                    <a href="#portfolio" class="nav-link">Porfolio</a>
+                </li>
+                <li>
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-   <header class="showcase">
-        <div class="content">
-            <img src="logo.png" alt="" srcset="">
-            <div class="title"> 
-                Corby Berry
-            </div>
-            <div class="text">
-                First Year Computer Science Major at Trent University
-            </div>
+        <div class="landing-text">
+            <h1>Corby Berry</h1>
+            <h6>Co-Op Student | TrentU CS</h6>
         </div>
-    </header>    
+    </header>
+    
+    
+    <section class="about" id="about">
+        <div class="container">
+            <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
+                <img src="img/profile.jpeg" alt="">
+            </div>
 
-<!--Socials-->
-<section class="socials">
-    <div class="container grid-3 center">
-        <div>
-            <i class="fab fa-twitter fa-3x"></i>
-            <a href="https://twitter.com/corbyberryy" style="text-decoration: none; color: #f4f4f4;">
-            <h3>Twitter</h3>
-            </a>
-            <p>My personal Twitter account. Everything here is forwarded from a major corporation; nothing is my opinion. Enjoy your salad.</p>
-        </div>
-        <div>
-            <i class="fab fa-github fa-3x"></i>
-            <a href="https://github.com/gigabide" style="text-decoration: none; color: #f4f4f4;">
-            <h3>GitHub</h3>
-        </a>
-            <p>My GitHub where you can find all (none) of my projects. Maybe I'll upload something once I know how to code. </p>
-        </div>
-        <div>
-                <i class="fab fa-linkedin-in fa-3x"></i>
-                <a href="https://www.linkedin.com/in/corbyberry/" style="text-decoration: none; color: #f4f4f4;">
-                <h3>LinkedIn</h3>
+            <div class="about-details" data-aos="fade-left" data-aos-delay="600">
+                <div class="about-heading">
+                    <h1>About</h1>
+                    <h6>Myself</h6>
+                </div>
+                <p>Hi, I'm Corby. I'm a programmer, and a passionate tech enthusiast. I am interested in both computer hardware and software development.
+                    I am currently studying computer science at Trent University, and seeking full time co-op positions for Fall and Summer 2020. <a href="#" class="icon-link">
+                    <a></a><i class="fab fa-facebook-square"></i>
                 </a>
-                <p>My LinkedIn profile, in the event that anyone makes the godawful decision of hiring me.</p>
-        </div>
-    </div> 
-</section>
-
-<!--About-->
-<section class="about bg-light">
-    <div class="container">
-        <div class="grid-2">
-            <div class="center">
-                <i class="fas fa-laptop-code fa-10x"></i>
+                </p>
+                <div class="social-media">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="www.github.com/gigabide" class="icon-link">
+                                <i class="fab fa-github-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="www.github.com/corbyberryy" class="icon-link">
+                                <i class="fab fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="icon-link">
+                                <i class="fab fa-dribbble-square"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <h3>About Me</h3>
-                <p>Tech enthusiast who loves gaming, coding, and creating, and has a genuine passion for computing overall. </p>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Porfolio</h1>
+                <h6>View some of my recent work</h6>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img has-margin-right" data-aos="fade-right" data-aos-delay="300">
+                    <img src="img/portitem1.jpg" alt="">
+                </div>
+                <div class="portfolio-description" data-aos="fade-left" data-aos-delay="600">
+                    <h6>Web Development</h6>
+                    <h1>Personal Website</h1>
+                    <p>
+                        Created and maintained corbyberry.dev for my own personal endeavours.
+                    </p>
+                    <a href="#" class="cta">View Details</a>
+                </div>
+            </div>
+
+        <div class="portfolio-item">
+            <div class="portfolio-description has-margin-right" data-aos="fade-right" data-aos-delay="900">
+                <h6>Coursework</h6>
+                <h1>Computer Organization</h1>
+                <p>
+                    Studied MIPS assembly language programming in Computer Organization.
+                </p>
+                <a href="#" class="cta">View Details</a>
+            </div>
+            <div class="portfolio-img" data-aos="fade-left" data-aos-delay="1200">
+                    <img src="img/portitem2.jpg" alt="">
+            </div>
+        </div>    
+        
+        <div class="portfolio-item" data-aos="fade-right" data-aos-delay="1500">
+            <div class="portfolio-img has-margin-right">
+                <img src="img/portitem3.jpg" alt="">
+            </div>
+            <div class="portfolio-description" data-aos="fade-left" data-aos-delay="1800">
+                <h6>Hobbyism</h6>
+                <h1>Android App Development</h1>
+                <p>
+                    Created simple android applications and games from Google's 'Applied CS Skills' course.
+                </p>
+                <a href="#" class="cta">View Details</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>    
+    
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Relevant Experience</h1>
+                <h6>Past and current studies</h6>
+            </div>
+            <div class="timeline" data-aos="fade-down" data-aos-delay="300">
+                <ul>
+                    <li class="date" data-date="2019 - Present">
+                        <h1>Trent University</h1>
+                        <p>
+                            Honours B.Sc (Co-Op) Computer Science
+                        </p>
+                    </li>
+                    <li class="date" data-date="2017 - 2019">
+                        <h1>International Baccalaureate</h1>
+                        <p>
+                            Higher Level History, English. Standard Level Math Studies.
+                        </p>
+                    </li>
+                    <li class="date" data-date="2015 - 2019">
+                        <h1>I.E Weldon Secondary School</h1>
+                        <p>
+                            Ontario Secondary School Diploma. Novice Tech Nerd.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>   
+    
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-heading">
+                <h1>Contact</h1 color = "#ff0000">
+                <h6>Let's work together</h6>
+            </div>   
+            <form action="" data-aos="fade-up" data-aos-delay="300">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="Enter your email..." required>
+                <label for="service">Services:</label>
+                <select name="services" id="service">
+                    <option value="">Work Oppourtunity</option>
+                    <option value="">Business Inquiry</option>
+                    <option value="">General Question</option>
+                </select>
+                <label for="subject">Subject:</label>
+                <textarea name="subject" id="subject" cols="10" rows="10"></textarea> 
+                <input type="submit" value="submit">   
+            </form>
+        </div>   
+    </section>   
+    
+    <footer class="copyright">
+        <div class="up" id="up">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+        <p>&copy; 2019 Corby Berry</p>
+    </footer>
 
-<footer class="center bg-dark">
-    <p>Corby Berry &copy; 2019</p>
-</footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="main.js"></script>
 </body>
-
 </html>
