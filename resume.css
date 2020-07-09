@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: Roboto;
+}
+
+.intro{
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 5vw;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+}
+
+.container { /* Container for grid items*/
+    max-width: 960px;
+    margin:auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.grid2{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.section{
+    margin: 5;
+}
