@@ -20,8 +20,11 @@ body{
     max-width: 960px;
     margin:auto;
     overflow: hidden;
-    text-align: center;
     padding: 4rem 1rem;
+}
+
+.container p{
+    text-align: left;
 }
 
 .grid2{
