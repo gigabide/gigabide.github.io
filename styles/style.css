@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Overpass+Mono&display=swap');
+
+/* Nord Colors */
+:root{
+    /* Polar Night */
+    --nord0:#2E3440;
+    --nord1:#3B4252;
+    --nord2:#434C5E;
+    --nord3:#4C566A;
+    /* Snow Storm */
+    --nord4:#D8DEE9;
+    --nord5:#E5E9F0;
+    --nord6:#ECEFF4;
+    /* Frost */
+    --nord7:#8FBCBB;
+    --nord8:#88C0D0;
+    --nord9:#81A1C1;
+    --nord10:#5E81AC;
+    /* Aurora */
+    --nord11: #BF616A;
+    --nord12: #D08770;
+    --nord13:#EBCB8B;
+    --nord14:#A3BE8C;
+    --nord15:#B48EAD;
+}
+
+/* Main Page Styling */
+html{
+    font-size: 100%;
+}
+body{
+    font-family: Overpass;
+    background-color: var(--nord6);
+    margin:0;
+    padding: 0;
+    color: var(--nord2);
+    font-size: 1.0rem;
+}
+a{
+    color: var(--nord11);
+}
+a:visited{
+    color:var(--nord2);
+}
+
+/* Navbar Styling */
+.navbar{
+    height:75px;
+    background-color: var(--nord11);
+}
+.navbar-flex{
+    margin: auto;
+    height:70px;
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-flex div{
+    height:20px;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    font-size: 1.4rem;
+}
+.logo{
+    font-family: Overpass Semibold;
+    color: var(--nord0);
+}
+.options a{
+    padding: 0.5rem;
+    font-family: Overpass Medium;
+    transition:0.2s;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--nord0);
+}
+.options a:hover{
+    color:var(--nord6);
+}
+.options i{
+    font-size: 1rem;
+}
+
+/* Page Content Styling */
+.gridbox-2col{
+    display: grid;
+    max-width: 1024px;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    padding-top: 22vh;
+    padding-bottom: 2rem;
+}
+.gridbox-2col div{
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+.gridbox-2col h3{
+    font-size: 1.5rem;
+}
+.herohead{
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.buttonbox{
+    display: flex;
+}
+.buttonbox a{
+    text-decoration: none;
+}
+.button{
+    border: solid 0.15rem var(--nord11);
+    border-radius: 0.25em;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    margin-right: 2rem;
+    margin-left: -1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.resume{
+    background-color: var(--nord11);
+    color: var(--nord0);
+    transition: 0.2s;
+}
+.resume:hover{
+    color:var(--nord6);
+}
+.github{
+    transition: 0.2s;
+    background-color: var(--nord4);
+    color: var(--nord0);
+}
+.github:hover{
+    background-color: var(--nord6);
+    color: var(--nord0);
+}
+.red{
+    color: var(--nord11);
+}
+footer{
+    position: absolute;
+    bottom: 0.5rem;
+    width: 100vw;
+    text-align: center;
+    color: rgba(67, 76, 94, 0.5);
+    font-size: 0.85rem;
+}
